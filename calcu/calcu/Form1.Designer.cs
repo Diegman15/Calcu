@@ -39,7 +39,7 @@
             this.Num9 = new System.Windows.Forms.Button();
             this.Num0 = new System.Windows.Forms.Button();
             this.Punto = new System.Windows.Forms.Button();
-            this.Resultado = new System.Windows.Forms.Button();
+            this.Igual = new System.Windows.Forms.Button();
             this.Porcentaje = new System.Windows.Forms.Button();
             this.Multiplicar = new System.Windows.Forms.Button();
             this.Sumar = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@
             this.Restar = new System.Windows.Forms.Button();
             this.ClearRecent = new System.Windows.Forms.Button();
             this.ClearAll = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Respuesta = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Num1
@@ -59,6 +59,7 @@
             this.Num1.TabIndex = 0;
             this.Num1.Text = "1";
             this.Num1.UseVisualStyleBackColor = true;
+            this.Num1.Click += new System.EventHandler(this.Num1_Click);
             // 
             // Num2
             // 
@@ -69,6 +70,7 @@
             this.Num2.TabIndex = 1;
             this.Num2.Text = "2";
             this.Num2.UseVisualStyleBackColor = true;
+            this.Num2.Click += new System.EventHandler(this.Num2_Click);
             // 
             // Num3
             // 
@@ -79,6 +81,7 @@
             this.Num3.TabIndex = 2;
             this.Num3.Text = "3";
             this.Num3.UseVisualStyleBackColor = true;
+            this.Num3.Click += new System.EventHandler(this.Num3_Click);
             // 
             // Num4
             // 
@@ -89,6 +92,7 @@
             this.Num4.TabIndex = 3;
             this.Num4.Text = "4";
             this.Num4.UseVisualStyleBackColor = true;
+            this.Num4.Click += new System.EventHandler(this.Num4_Click);
             // 
             // Num5
             // 
@@ -99,6 +103,7 @@
             this.Num5.TabIndex = 4;
             this.Num5.Text = "5";
             this.Num5.UseVisualStyleBackColor = true;
+            this.Num5.Click += new System.EventHandler(this.Num5_Click);
             // 
             // Num6
             // 
@@ -109,6 +114,7 @@
             this.Num6.TabIndex = 5;
             this.Num6.Text = "6";
             this.Num6.UseVisualStyleBackColor = true;
+            this.Num6.Click += new System.EventHandler(this.Num6_Click);
             // 
             // Num7
             // 
@@ -119,6 +125,7 @@
             this.Num7.TabIndex = 6;
             this.Num7.Text = "7";
             this.Num7.UseVisualStyleBackColor = true;
+            this.Num7.Click += new System.EventHandler(this.Num7_Click);
             // 
             // Num8
             // 
@@ -129,6 +136,7 @@
             this.Num8.TabIndex = 7;
             this.Num8.Text = "8";
             this.Num8.UseVisualStyleBackColor = true;
+            this.Num8.Click += new System.EventHandler(this.Num8_Click);
             // 
             // Num9
             // 
@@ -139,6 +147,7 @@
             this.Num9.TabIndex = 8;
             this.Num9.Text = "9";
             this.Num9.UseVisualStyleBackColor = true;
+            this.Num9.Click += new System.EventHandler(this.Num9_Click);
             // 
             // Num0
             // 
@@ -149,6 +158,7 @@
             this.Num0.TabIndex = 9;
             this.Num0.Text = "0";
             this.Num0.UseVisualStyleBackColor = true;
+            this.Num0.Click += new System.EventHandler(this.Num0_Click);
             // 
             // Punto
             // 
@@ -160,15 +170,16 @@
             this.Punto.Text = ".";
             this.Punto.UseVisualStyleBackColor = true;
             // 
-            // Resultado
+            // Igual
             // 
-            this.Resultado.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Resultado.Location = new System.Drawing.Point(335, 354);
-            this.Resultado.Name = "Resultado";
-            this.Resultado.Size = new System.Drawing.Size(53, 59);
-            this.Resultado.TabIndex = 11;
-            this.Resultado.Text = "=";
-            this.Resultado.UseVisualStyleBackColor = true;
+            this.Igual.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Igual.Location = new System.Drawing.Point(335, 354);
+            this.Igual.Name = "Igual";
+            this.Igual.Size = new System.Drawing.Size(53, 59);
+            this.Igual.TabIndex = 11;
+            this.Igual.Text = "=";
+            this.Igual.UseVisualStyleBackColor = true;
+            this.Igual.Click += new System.EventHandler(this.Igual_Click);
             // 
             // Porcentaje
             // 
@@ -179,6 +190,7 @@
             this.Porcentaje.TabIndex = 12;
             this.Porcentaje.Text = "%";
             this.Porcentaje.UseVisualStyleBackColor = true;
+            this.Porcentaje.Click += new System.EventHandler(this.Porcentaje_Click);
             // 
             // Multiplicar
             // 
@@ -189,6 +201,7 @@
             this.Multiplicar.TabIndex = 13;
             this.Multiplicar.Text = "x";
             this.Multiplicar.UseVisualStyleBackColor = true;
+            this.Multiplicar.Click += new System.EventHandler(this.Multiplicar_Click);
             // 
             // Sumar
             // 
@@ -199,6 +212,7 @@
             this.Sumar.TabIndex = 14;
             this.Sumar.Text = "+";
             this.Sumar.UseVisualStyleBackColor = true;
+            this.Sumar.Click += new System.EventHandler(this.Sumar_Click);
             // 
             // Dividir
             // 
@@ -209,6 +223,7 @@
             this.Dividir.TabIndex = 15;
             this.Dividir.Text = "/";
             this.Dividir.UseVisualStyleBackColor = true;
+            this.Dividir.Click += new System.EventHandler(this.Dividir_Click);
             // 
             // Restar
             // 
@@ -219,6 +234,7 @@
             this.Restar.TabIndex = 16;
             this.Restar.Text = "-";
             this.Restar.UseVisualStyleBackColor = true;
+            this.Restar.Click += new System.EventHandler(this.Restar_Click);
             // 
             // ClearRecent
             // 
@@ -229,6 +245,7 @@
             this.ClearRecent.TabIndex = 17;
             this.ClearRecent.Text = "CE";
             this.ClearRecent.UseVisualStyleBackColor = true;
+            this.ClearRecent.Click += new System.EventHandler(this.ClearRecent_Click);
             // 
             // ClearAll
             // 
@@ -239,21 +256,24 @@
             this.ClearAll.TabIndex = 18;
             this.ClearAll.Text = "C";
             this.ClearAll.UseVisualStyleBackColor = true;
+            this.ClearAll.Click += new System.EventHandler(this.ClearAll_Click);
             // 
-            // textBox1
+            // Respuesta
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(445, 41);
-            this.textBox1.TabIndex = 19;
+            this.Respuesta.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Respuesta.Location = new System.Drawing.Point(12, 30);
+            this.Respuesta.Name = "Respuesta";
+            this.Respuesta.ReadOnly = true;
+            this.Respuesta.Size = new System.Drawing.Size(445, 41);
+            this.Respuesta.TabIndex = 19;
+            this.Respuesta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Respuesta);
             this.Controls.Add(this.ClearAll);
             this.Controls.Add(this.ClearRecent);
             this.Controls.Add(this.Restar);
@@ -261,7 +281,7 @@
             this.Controls.Add(this.Sumar);
             this.Controls.Add(this.Multiplicar);
             this.Controls.Add(this.Porcentaje);
-            this.Controls.Add(this.Resultado);
+            this.Controls.Add(this.Igual);
             this.Controls.Add(this.Punto);
             this.Controls.Add(this.Num0);
             this.Controls.Add(this.Num9);
@@ -274,7 +294,7 @@
             this.Controls.Add(this.Num2);
             this.Controls.Add(this.Num1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,7 +313,7 @@
         private System.Windows.Forms.Button Num9;
         private System.Windows.Forms.Button Num0;
         private System.Windows.Forms.Button Punto;
-        private System.Windows.Forms.Button Resultado;
+        private System.Windows.Forms.Button Igual;
         private System.Windows.Forms.Button Porcentaje;
         private System.Windows.Forms.Button Multiplicar;
         private System.Windows.Forms.Button Sumar;
@@ -301,7 +321,7 @@
         private System.Windows.Forms.Button Restar;
         private System.Windows.Forms.Button ClearRecent;
         private System.Windows.Forms.Button ClearAll;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Respuesta;
     }
 }
 

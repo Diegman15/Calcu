@@ -169,6 +169,7 @@
             this.Punto.TabIndex = 10;
             this.Punto.Text = ".";
             this.Punto.UseVisualStyleBackColor = true;
+            this.Punto.Click += new System.EventHandler(this.Punto_Click);
             // 
             // Igual
             // 

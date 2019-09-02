@@ -145,5 +145,10 @@ namespace calcu
         {
             Respuesta.Clear();
         }
+
+        private void Punto_Click(object sender, EventArgs e)
+        {
+            Respuesta.Text = Respuesta.Text + ".";
+        }
     }
 }
